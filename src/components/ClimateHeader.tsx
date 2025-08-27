@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import logoImage from "@/assets/ai-human-story-logo.png";
 
 const ClimateHeader = () => {
   const categories = [
@@ -18,8 +19,7 @@ const ClimateHeader = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-blue-medium rounded"></div>
-            <span className="font-medium">AI.SEARCH.STORY</span>
+            <img src={logoImage} alt="AI.HUMAN.STORY" className="h-8 w-auto" />
           </div>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm">Login</Button>

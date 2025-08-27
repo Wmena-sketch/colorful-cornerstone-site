@@ -12,7 +12,7 @@ const ClimateFooter = () => {
 
   const footerLinks = [
     {
-      title: "AI SEARCH STORY",
+      title: "AI.HUMAN.STORY",
       links: ["About", "Careers", "Press", "Help"]
     },
     {
@@ -61,7 +61,7 @@ const ClimateFooter = () => {
 
         <div className="text-center mt-12 pt-8 border-t">
           <p className="text-gray-500 text-sm">
-            © 2024 AI Search Story. All rights reserved.
+            © 2024 AI.HUMAN.STORY. All rights reserved.
           </p>
         </div>
       </div>
