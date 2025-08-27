@@ -1,23 +1,29 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import AINewsSection from "@/components/AINewsSection";
-import AIToolsHub from "@/components/AIToolsHub";
-import AISkillsHub from "@/components/AISkillsHub";
-import Newsletter from "@/components/Newsletter";
-import Footer from "@/components/Footer";
+import ClimateHeader from "@/components/ClimateHeader";
+import ClimateHero from "@/components/ClimateHero";
+import LatestArticles from "@/components/LatestArticles";
+import NotAISection from "@/components/NotAISection";
+import FeaturedSection from "@/components/FeaturedSection";
+import NewsletterSection from "@/components/NewsletterSection";
+import PracticalAITools from "@/components/PracticalAITools";
+import ResponsibleAI from "@/components/ResponsibleAI";
+import JoinMovement from "@/components/JoinMovement";
+import ClimateFooter from "@/components/ClimateFooter";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <ClimateHeader />
       <main>
-        <Hero />
-        <AINewsSection />
-        <AIToolsHub />
-        <AISkillsHub />
-        <Newsletter />
+        <ClimateHero />
+        <LatestArticles />
+        <NotAISection />
+        <FeaturedSection />
+        <NewsletterSection />
+        <PracticalAITools />
+        <ResponsibleAI />
+        <JoinMovement />
       </main>
-      <Footer />
+      <ClimateFooter />
     </div>
   );
 };

@@ -8,37 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 270 20% 98%;
-    --foreground: 270 15% 5%;
+    --background: 0 0% 100%;
+    --foreground: 210 22% 22%;
 
     --card: 0 0% 100%;
-    --card-foreground: 270 15% 5%;
+    --card-foreground: 210 22% 22%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 270 15% 5%;
+    --popover-foreground: 210 22% 22%;
 
-    --primary: 262 85% 58%;
+    --primary: 220 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 270 10% 95%;
-    --secondary-foreground: 270 15% 25%;
+    --secondary: 210 20% 95%;
+    --secondary-foreground: 210 22% 22%;
 
-    --muted: 270 10% 95%;
-    --muted-foreground: 270 8% 45%;
+    --muted: 210 20% 95%;
+    --muted-foreground: 210 15% 45%;
 
-    --accent: 195 100% 65%;
-    --accent-foreground: 270 15% 5%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 270 10% 90%;
-    --input: 270 10% 90%;
-    --ring: 262 85% 58%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 220 100% 50%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(262 85% 58%), hsl(195 100% 65%));
-    --gradient-secondary: linear-gradient(135deg, hsl(195 100% 65%), hsl(320 100% 70%));
-    --gradient-accent: linear-gradient(135deg, hsl(320 100% 70%), hsl(45 100% 65%));
+    --blue-light: 214 100% 92%;
+    --blue-medium: 220 100% 50%;
+    --blue-dark: 230 45% 25%;
+    --green-light: 142 70% 85%;
+    --green-medium: 142 76% 36%;
+    --orange-light: 25 100% 90%;
+    --orange-medium: 25 95% 53%;
+    --purple-light: 270 100% 92%;
+    --purple-medium: 270 100% 70%;
+    --yellow-light: 48 100% 88%;
+    --yellow-medium: 48 95% 53%;
 
     --radius: 0.5rem;
 
