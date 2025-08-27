@@ -18,8 +18,9 @@ const ClimateHeader = () => {
     <header className="bg-white border-b">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <img src={logoImage} alt="AI.HUMAN.STORY" className="h-8 w-auto" />
+            <span className="font-bold text-xl">AI.HUMAN.STORY</span>
           </div>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm">Login</Button>
