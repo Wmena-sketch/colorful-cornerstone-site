@@ -16,16 +16,6 @@ const ClimateHeader = () => {
     { name: "Premium Membership", path: "/premium" }
   ];
 
-  const categories = [
-    { name: "AI Story", color: "bg-blue-medium text-white" },
-    { name: "News", color: "bg-orange-medium text-white" },
-    { name: "AI Explained", color: "bg-yellow-medium text-black" },
-    { name: "Research", color: "bg-green-medium text-white" },
-    { name: "Analysis", color: "bg-red-500 text-white" },
-    { name: "Opinion", color: "bg-purple-medium text-white" },
-    { name: "By Theme", color: "bg-blue-dark text-white" },
-    { name: "See All", color: "bg-gray-600 text-white" }
-  ];
 
   return (
     <header className="bg-white border-b">
@@ -57,13 +47,6 @@ const ClimateHeader = () => {
           ))}
         </nav>
         
-        <div className="flex flex-wrap gap-2 py-3">
-          {categories.map((category, index) => (
-            <Badge key={index} className={`${category.color} hover:opacity-80 cursor-pointer`}>
-              {category.name}
-            </Badge>
-          ))}
-        </div>
       </div>
     </header>
   );
