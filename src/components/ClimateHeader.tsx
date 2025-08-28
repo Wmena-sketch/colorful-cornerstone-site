@@ -22,8 +22,8 @@ const ClimateHeader = () => {
     <header className="relative" style={{ backgroundColor: '#ffde59' }}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-6">
-          <Link to="/" className="absolute -bottom-12 left-4 z-10">
-            <img src={logoImage} alt="AI.HUMAN.STORY" className="h-24 w-auto filter drop-shadow-sm" />
+          <Link to="/" className="absolute -bottom-8 left-4 z-10">
+            <img src={logoImage} alt="AI.HUMAN.STORY" className="h-20 w-auto filter drop-shadow-sm" />
           </Link>
           <div className="flex items-center gap-4 ml-auto">
             <Button 
@@ -36,7 +36,7 @@ const ClimateHeader = () => {
           </div>
         </div>
         
-        <nav className="flex flex-wrap gap-6 py-4 pl-2">
+        <nav className="flex flex-wrap gap-6 py-4 pl-32">
           {mainNavigation.map((item) => (
             <Link
               key={item.path}
