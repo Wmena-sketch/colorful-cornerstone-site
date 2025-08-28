@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import logoImage from "@/assets/ai-human-story-logo.png";
+import logoImage from "@/assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 
 const ClimateHeader = () => {
@@ -22,7 +22,7 @@ const ClimateHeader = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <Link to="/" className="flex items-center gap-3">
-            <span className="font-retro font-bold text-4xl text-black tracking-wider">AI.Human.Story</span>
+            <img src={logoImage} alt="AI.HUMAN.STORY" className="h-12 w-auto" />
           </Link>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" className="text-black hover:bg-black hover:text-yellow-400 font-bold">
