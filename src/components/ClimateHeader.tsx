@@ -8,9 +8,7 @@ const ClimateHeader = () => {
   
   const mainNavigation = [
     { name: "Home", path: "/" },
-    { name: "Stories", path: "/stories" },
     { name: "Videos", path: "/videos" },
-    { name: "AI Explained", path: "/ai-explained" },
     { name: "Skills Hub", path: "/skills-hub" },
     { name: "Tool Hub", path: "/tool-hub" },
     { name: "Newsletters", path: "/newsletters" },
