@@ -18,11 +18,11 @@ const ClimateHeader = () => {
 
 
   return (
-    <header className="bg-yellow-400">
+    <header className="relative" style={{ backgroundColor: '#ffde59' }}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <Link to="/" className="flex items-center gap-3">
-            <img src={logoImage} alt="AI.HUMAN.STORY" className="h-16 w-auto" />
+          <Link to="/" className="absolute -bottom-8 left-4 z-10">
+            <img src={logoImage} alt="AI.HUMAN.STORY" className="h-20 w-auto" />
           </Link>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" className="text-black hover:bg-black hover:text-yellow-400 font-bold">
