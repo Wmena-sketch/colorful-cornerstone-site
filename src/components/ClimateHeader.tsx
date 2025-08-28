@@ -34,20 +34,22 @@ const ClimateHeader = () => {
           </div>
         </div>
         
-        <nav className="flex flex-wrap gap-6 py-4 pl-32">
-          {mainNavigation.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={`text-sm font-bold transition-all duration-200 hover:text-gray-800 hover:scale-105 ${
-                location.pathname === item.path 
-                  ? "text-black underline underline-offset-4 decoration-2" 
-                  : "text-black"
-              }`}
-            >
-              {item.name.toUpperCase()}
-            </Link>
-          ))}
+        <nav className="px-4 py-4 md:pl-32 md:px-0">
+          <div className="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:gap-6">
+            {mainNavigation.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={`text-center md:text-left text-base md:text-sm font-bold transition-all duration-200 hover:text-gray-800 hover:scale-105 py-2 px-3 rounded-lg ${
+                  location.pathname === item.path 
+                    ? "text-black underline underline-offset-4 decoration-2 bg-black/5" 
+                    : "text-black hover:bg-black/5"
+                }`}
+              >
+                {item.name.toUpperCase()}
+              </Link>
+            ))}
+          </div>
         </nav>
         
       </div>
