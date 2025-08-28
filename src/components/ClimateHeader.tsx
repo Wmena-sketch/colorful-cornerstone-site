@@ -13,8 +13,7 @@ const ClimateHeader = () => {
     { name: "AI Explained", path: "/ai-explained" },
     { name: "Skills & Education Hub", path: "/skills-hub" },
     { name: "Tool Hub", path: "/tool-hub" },
-    { name: "Community", path: "/community" },
-    { name: "Premium Membership", path: "/premium" }
+    { name: "Community", path: "/community" }
   ];
 
 
@@ -23,7 +22,7 @@ const ClimateHeader = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <Link to="/" className="flex items-center gap-3">
-            <span className="font-black text-4xl italic text-black">AI.Human.Story</span>
+            <span className="font-druzhba font-bold text-4xl text-black">AI.Human.Story</span>
           </Link>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" className="text-black hover:bg-black hover:text-yellow-400 font-bold">
