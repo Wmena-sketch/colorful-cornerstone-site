@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Stories from "./pages/Stories";
+import Videos from "./pages/Videos";
 import AIExplained from "./pages/AIExplained";
 import SkillsHub from "./pages/SkillsHub";
 import ToolHub from "./pages/ToolHub";
@@ -23,6 +24,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/stories" element={<Stories />} />
+          <Route path="/videos" element={<Videos />} />
           <Route path="/ai-explained" element={<AIExplained />} />
           <Route path="/skills-hub" element={<SkillsHub />} />
           <Route path="/tool-hub" element={<ToolHub />} />
