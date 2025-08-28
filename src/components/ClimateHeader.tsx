@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import logoImage from "@/assets/logo.png";
+import logoImage from "@/assets/ai-human-story-logo.png";
 import { Link, useLocation } from "react-router-dom";
 
 const ClimateHeader = () => {
@@ -20,25 +20,29 @@ const ClimateHeader = () => {
   return (
     <header className="relative" style={{ backgroundColor: '#ffde59' }}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-4">
-          <Link to="/" className="absolute -bottom-8 left-4 z-10">
-            <img src={logoImage} alt="AI.HUMAN.STORY" className="h-20 w-auto" />
+        <div className="flex items-center justify-between py-6">
+          <Link to="/" className="absolute -bottom-12 left-4 z-10">
+            <img src={logoImage} alt="AI.HUMAN.STORY" className="h-24 w-auto filter drop-shadow-sm" />
           </Link>
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm" className="text-black hover:bg-black hover:text-yellow-400 font-bold">
+          <div className="flex items-center gap-4 ml-auto">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-yellow-400 font-bold px-6 py-2 rounded-full transition-all duration-200"
+            >
               MENU
             </Button>
           </div>
         </div>
         
-        <nav className="flex flex-wrap gap-8 py-3">
+        <nav className="flex flex-wrap gap-6 py-4 pl-2">
           {mainNavigation.map((item) => (
             <Link
               key={item.path}
               to={item.path}
-              className={`text-sm font-bold transition-colors hover:text-gray-700 ${
+              className={`text-sm font-bold transition-all duration-200 hover:text-gray-800 hover:scale-105 ${
                 location.pathname === item.path 
-                  ? "text-black underline" 
+                  ? "text-black underline underline-offset-4 decoration-2" 
                   : "text-black"
               }`}
             >
