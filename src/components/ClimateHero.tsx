@@ -15,13 +15,13 @@ const ClimateHero = () => {
           
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              AI for <br />
-              <span className="text-blue-medium">Climate Action</span>
+              Finding The Human Signal <br />
+              <span className="text-blue-medium">in The AI Noise</span>
             </h1>
             <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-              Explore diverse ideas and insights into AI and its potential to support the 
-              climate movement. Join our climate journey to create a world where 
-              technology drives climate action.
+              Cut through the AI hype to discover authentic human stories, meaningful applications, 
+              and genuine insights. We spotlight real people solving real problems with AI, 
+              beyond the marketing noise and into the heart of human-centered innovation.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
