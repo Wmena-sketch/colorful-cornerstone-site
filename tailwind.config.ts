@@ -19,7 +19,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'druzhba': ['Druzhba Retro', 'serif'],
+				'retro': ['Monaco', 'Menlo', 'Ubuntu Mono', 'monospace'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
