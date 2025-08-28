@@ -19,31 +19,31 @@ const ClimateHeader = () => {
 
 
   return (
-    <header className="bg-white border-b">
+    <header className="bg-yellow-400">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logoImage} alt="AI.HUMAN.STORY" className="h-8 w-auto" />
-            <span className="font-bold text-xl">AI.HUMAN.STORY</span>
+            <span className="font-black text-4xl italic text-black">AI.Human.Story</span>
           </Link>
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="sm">Login</Button>
-            <Button size="sm">Sign up</Button>
+            <Button variant="ghost" size="sm" className="text-black hover:bg-black hover:text-yellow-400 font-bold">
+              MENU
+            </Button>
           </div>
         </div>
         
-        <nav className="flex flex-wrap gap-6 py-3 border-b border-gray-100">
+        <nav className="flex flex-wrap gap-8 py-3">
           {mainNavigation.map((item) => (
             <Link
               key={item.path}
               to={item.path}
-              className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+              className={`text-sm font-bold transition-colors hover:text-gray-700 ${
                 location.pathname === item.path 
-                  ? "text-blue-600 border-b-2 border-blue-600 pb-1" 
-                  : "text-gray-700"
+                  ? "text-black underline" 
+                  : "text-black"
               }`}
             >
-              {item.name}
+              {item.name.toUpperCase()}
             </Link>
           ))}
         </nav>
