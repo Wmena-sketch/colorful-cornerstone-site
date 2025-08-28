@@ -9,6 +9,7 @@ import Videos from "./pages/Videos";
 import AIExplained from "./pages/AIExplained";
 import SkillsHub from "./pages/SkillsHub";
 import ToolHub from "./pages/ToolHub";
+import Newsletters from "./pages/Newsletters";
 import Community from "./pages/Community";
 import Premium from "./pages/Premium";
 import NotFound from "./pages/NotFound";
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/ai-explained" element={<AIExplained />} />
           <Route path="/skills-hub" element={<SkillsHub />} />
           <Route path="/tool-hub" element={<ToolHub />} />
+          <Route path="/newsletters" element={<Newsletters />} />
           <Route path="/community" element={<Community />} />
           <Route path="/premium" element={<Premium />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
