@@ -15,8 +15,7 @@ const ClimateHero = () => {
           
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Finding The Human Signal <br />
-              <span className="text-blue-medium">in The AI Noise</span>
+              Finding The Human Signal <span className="text-blue-medium">in The AI Noise</span>
             </h1>
             <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
               Cut through the AI hype to discover authentic human stories, meaningful applications, 
