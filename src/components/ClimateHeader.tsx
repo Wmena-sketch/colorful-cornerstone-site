@@ -2,9 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import logoImage from "@/assets/ai-human-story-logo.png";
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 const ClimateHeader = () => {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const mainNavigation = [
     { name: "Home", path: "/" },
@@ -28,6 +30,7 @@ const ClimateHeader = () => {
             <Button 
               variant="outline" 
               size="sm" 
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-yellow-400 font-bold px-6 py-2 rounded-full transition-all duration-200"
             >
               MENU
@@ -35,23 +38,26 @@ const ClimateHeader = () => {
           </div>
         </div>
         
-        <nav className="px-4 py-4 md:pl-32 md:px-0">
-          <div className="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:gap-6">
-            {mainNavigation.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`text-center md:text-left text-base md:text-sm font-bold transition-all duration-200 hover:text-gray-800 hover:scale-105 py-2 px-3 rounded-lg ${
-                  location.pathname === item.path 
-                    ? "text-black underline underline-offset-4 decoration-2 bg-black/5" 
-                    : "text-black hover:bg-black/5"
-                }`}
-              >
-                {item.name.toUpperCase()}
-              </Link>
-            ))}
-          </div>
-        </nav>
+        {isMenuOpen && (
+          <nav className="px-4 py-4 md:pl-32 md:px-0 animate-in slide-in-from-top-2 duration-300">
+            <div className="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:gap-6">
+              {mainNavigation.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`text-center md:text-left text-base md:text-sm font-bold transition-all duration-200 hover:text-gray-800 hover:scale-105 py-2 px-3 rounded-lg ${
+                    location.pathname === item.path 
+                      ? "text-black underline underline-offset-4 decoration-2 bg-black/5" 
+                      : "text-black hover:bg-black/5"
+                  }`}
+                >
+                  {item.name.toUpperCase()}
+                </Link>
+              ))}
+            </div>
+          </nav>
+        )}
         
       </div>
     </header>
