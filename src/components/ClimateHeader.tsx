@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import logoImage from "@/assets/ai-human-story-logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const ClimateHeader = () => {
   const location = useLocation();
@@ -31,9 +32,10 @@ const ClimateHeader = () => {
               variant="outline" 
               size="sm" 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-yellow-400 font-bold px-6 py-2 rounded-full transition-all duration-200"
+              className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-yellow-400 font-bold px-6 py-2 rounded-full transition-all duration-200 flex items-center gap-2"
             >
               MENU
+              <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isMenuOpen ? 'rotate-180' : ''}`} />
             </Button>
           </div>
         </div>
