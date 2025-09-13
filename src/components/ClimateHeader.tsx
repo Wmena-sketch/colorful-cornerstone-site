@@ -15,7 +15,7 @@ const ClimateHeader = () => {
   ];
 
   return (
-    <header className="relative" style={{ backgroundColor: '#ffde59' }}>
+    <header className="relative bg-blue-light dark:bg-blue-dark">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-center py-6">
           <nav className="flex flex-wrap gap-2 md:gap-4 justify-center">
