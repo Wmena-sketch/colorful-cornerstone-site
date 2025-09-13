@@ -4,20 +4,20 @@ import { Badge } from "@/components/ui/badge";
 const NotAISection = () => {
   const articles = [
     {
-      title: "Why big vocal should stay positive? How AI affects climate startup, democratizing climate system",
-      category: "Climate",
+      title: "The Human Element Behind AI Ethics",
+      category: "Human Stories",
       color: "bg-blue-light",
       accent: "bg-blue-medium"
     },
     {
-      title: "Put it on ChatGPT; We need generative AI than its tracking its impact",
-      category: "AI News",
+      title: "Community Voices in AI Development",
+      category: "Global Voices",
       color: "bg-orange-light",
       accent: "bg-orange-medium"
     },
     {
-      title: "Boost earth lobby & get more policy and fuel transformation we expected",
-      category: "Policy",
+      title: "Indigenous Perspectives on Technology",
+      category: "Cultural Impact",
       color: "bg-green-light",
       accent: "bg-green-medium"
     }
@@ -47,9 +47,9 @@ const NotAISection = () => {
                 </h3>
                 
                 <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <span>👤 Author</span>
+                  <span>👤 Wafaa Albadry</span>
                   <span>•</span>
-                  <span>3 min read</span>
+                  <span>Featured Story</span>
                 </div>
               </CardContent>
             </Card>

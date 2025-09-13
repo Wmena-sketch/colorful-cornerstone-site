@@ -4,22 +4,28 @@ import { Badge } from "@/components/ui/badge";
 const LatestArticles = () => {
   const articles = [
     {
-      title: "From algorithms to action: How AI researchers are democratizing climate science",
-      category: "AI Story",
+      title: "Do we have an AI companion crisis?",
+      category: "AI Psychology",
       color: "bg-blue-light",
-      accent: "bg-blue-medium"
+      accent: "bg-blue-medium",
+      date: "Aug 06, 2025",
+      description: "Why People believed the cute rabbits video, leaked chats, fresh AI stories from the Global Majority"
     },
     {
-      title: "Affordable solutions backed by science: The surge in home energy storage",
-      category: "Research", 
+      title: "AI's Eyes, Ears, and Voice for an Unstandardized Human",
+      category: "AI Technology", 
       color: "bg-green-light",
-      accent: "bg-green-medium"
+      accent: "bg-green-medium",
+      date: "Aug 14, 2025",
+      description: "👶🚜 Babies driving excavators, AI psychosis, Indigenous voices, grieving father, & pig butchering"
     },
     {
-      title: "Tech giants, governments white papers reshape the climate enhancement",
-      category: "Analysis",
+      title: "IBM's Technology Use in the Holocaust Holds a Warning for AI",
+      category: "AI Ethics",
       color: "bg-purple-light", 
-      accent: "bg-purple-medium"
+      accent: "bg-purple-medium",
+      date: "Sep 03, 2025",
+      description: "The Real Threat Is Silence, Not Robots - plus AI Ethics Course"
     }
   ];
 
@@ -45,11 +51,12 @@ const LatestArticles = () => {
                 <h3 className="text-lg font-semibold mb-3 leading-tight">
                   {article.title}
                 </h3>
+                <p className="text-sm text-gray-600 mb-3">{article.description}</p>
                 
                 <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <span>👤 Author</span>
+                  <span>👤 Wafaa Albadry</span>
                   <span>•</span>
-                  <span>5 min read</span>
+                  <span>{article.date}</span>
                 </div>
               </CardContent>
             </Card>

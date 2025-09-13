@@ -4,30 +4,30 @@ import { Button } from "@/components/ui/button";
 const PracticalAITools = () => {
   const tools = [
     {
-      name: "AI Tool Designer",
-      description: "Create and design AI-powered tools with intuitive interface and powerful capabilities",
-      icon: "🎨",
+      name: "AI Ethics Guidelines",
+      description: "Learn from Oxford's AI Guidelines for Students and comprehensive ethical frameworks",
+      icon: "⚖️",
       color: "bg-blue-medium",
       textColor: "text-white"
     },
     {
-      name: "Content Superhero",
-      description: "Generate high-quality content at scale with AI-powered writing assistance",
-      icon: "🦸",
+      name: "Global AI Perspectives",
+      description: "Discover AI stories from the Global Majority and diverse cultural viewpoints",
+      icon: "🌍",
       color: "bg-orange-medium", 
       textColor: "text-white"
     },
     {
-      name: "Impact Tracker",
-      description: "Monitor and analyze your climate impact with AI-driven insights and recommendations",
-      icon: "📊",
+      name: "AI Psychology Tools",
+      description: "Understand the human impact of AI companions and digital relationships",
+      icon: "🧠",
       color: "bg-green-medium",
       textColor: "text-white"
     },
     {
-      name: "Code Assistant",
-      description: "AI-powered coding companion that helps you write better code faster",
-      icon: "💻",
+      name: "Human-Centered AI",
+      description: "Resources for developing AI that prioritizes human dignity and wellbeing",
+      icon: "❤️",
       color: "bg-yellow-medium",
       textColor: "text-black"
     }
@@ -39,8 +39,8 @@ const PracticalAITools = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Practical AI tools</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Curate creative AI tools. Use high-quality research, analysis, practical development. 
-            Browse our applications and integrate them into your workflow.
+            Explore ethical AI resources and tools that prioritize human values. 
+            Find research, insights, and practical guidance for responsible AI development.
           </p>
         </div>
         

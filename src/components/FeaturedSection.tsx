@@ -4,17 +4,17 @@ import { Button } from "@/components/ui/button";
 const FeaturedSection = () => {
   const featuredItems = [
     {
-      title: "Understand journalism, newsroom, newsroom's power, and personal development",
+      title: "Understanding AI's impact on journalism and personal development",
       color: "bg-purple-600",
       icon: "📰"
     },
     {
-      title: "High temperature laser cool androgynous street art & street complexion",
+      title: "Exploring AI companion crisis and human relationships",
       color: "bg-green-600", 
-      icon: "🎨"
+      icon: "🤖"
     },
     {
-      title: "Where the world learns about climate and technology",
+      title: "Finding the human signal in the AI noise",
       color: "bg-blue-600",
       icon: "🌍",
       isHighlight: true

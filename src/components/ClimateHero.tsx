@@ -7,8 +7,8 @@ const ClimateHero = () => {
         <div className="max-w-4xl mx-auto">
           <div className="relative mb-8">
             <img 
-              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=400&fit=crop" 
-              alt="Forest landscape"
+              src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/publication/logo/13cc38f3-c453-4300-91a3-f736bb63b0b5/2__New_LinkedIn_Banner_.png" 
+              alt="AI.Human.Story - Finding the human signal in the AI noise"
               className="w-full h-64 object-cover rounded-lg"
             />
           </div>
@@ -35,7 +35,7 @@ const ClimateHero = () => {
 
           <div className="text-center">
             <div className="inline-flex items-center gap-2 text-sm text-gray-500">
-              <span>✅ 311K Stories</span>
+              <span>✅ Written by Wafaa</span>
               <Button variant="ghost" size="sm" className="text-blue-medium">
                 Join us
               </Button>
